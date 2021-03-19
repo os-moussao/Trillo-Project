@@ -1,17 +1,28 @@
-/*
-COLORS
+@charset "UTF-8";
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
+// 1. Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
+// 2. Vendors: nothing to import
 
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
+// 3. Base Styling
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+@import 'base/utilities';
 
-*/
+// 4. Micro Components
+@import 'components/buttons';
+
+// 5. Layouts
+// @import 'layouts/header';
+// @import 'layouts/footer';
+// @import 'layouts/navigation';
+
+// 6. Page-specific
+@import 'pages/home';
+
+// 7. Themes: no themes
