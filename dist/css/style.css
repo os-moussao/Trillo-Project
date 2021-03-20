@@ -29,7 +29,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: var(--light-2); }
+  background: var(--light-1); }
 
 h1, h2, h3, h4 {
   margin-bottom: 1rem; }
@@ -50,6 +50,22 @@ body {
   color: var(--dark-2); }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   overflow-x: hidden; }
+
+.header {
+  height: 4rem;
+  background: #fff;
+  border-bottom: 1px var(--light-2) solid; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background: var(--dark-1);
+  flex: 0 0 18%; }
+
+.main-view {
+  background: #fff;
+  flex: 1; }
