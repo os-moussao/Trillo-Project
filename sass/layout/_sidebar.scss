@@ -26,7 +26,7 @@
         }
     }
 
-    // Before The item: for the hover effect
+    // Before selector: mainly for the hover effect
     &__item::before {
         content: "";
         position: absolute;
@@ -42,12 +42,14 @@
                     width .4s .3s cubic-bezier(1, 0, 0, 1);
     }
 
+    // Item Hover effect
     &__item:hover::before,
     &__item--active::before {
         transform: scaleY(1);
         width: 100%;
     }
 
+    // Lighten item background when active
     &__item:active::before {
         background: linear-gradient(to left bottom, lighten(#FF3366, 5%), lighten(#BA265D, 5%));
     }
@@ -63,7 +65,7 @@
         display: flex;
         align-items: center;
 
-        // Making it Appeare on top: to still be shown in the hover effect
+        // Making it Appeare on top
         position: relative;
         z-index: 10; // z-index doesn't work if the position is static
     }
@@ -74,9 +76,6 @@
         fill: currentColor; // Color of the current element if defined, otherwise the color of the parent element
         margin-right: .6rem;
     }
-
-    // Hover Effect
-    
 }
 
 ////////////////////////////////
