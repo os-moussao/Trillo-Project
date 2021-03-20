@@ -1,4 +1,89 @@
+// ------------------------------------------------
+// This file contains the styling of the sidebar and the components inside it
+// ------------------------------------------------
+
+// Sidebar Global Styling
 .sidebar {
     background: var(--dark-1);
-    flex: 0 0 18%; // grow 0, shrink 0, basis 18%
+    flex: 0 0 230px; // grow 0, shrink 0, basis 18%
+    padding: 1rem 0;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+///////////////////////////////
+// Navigation
+.side-nav {
+    margin-top: 1rem;
+
+    // Navigation list item
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+        }
+    }
+
+    // Before The item: for the hover effect
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to left bottom, var(--primary-light), var(--primary-dark));
+
+        // Pre-Styling needed for the hover effects
+        transform: scaleY(0);
+        transition: transform .3s,
+                    width .4s .3s cubic-bezier(1, 0, 0, 1);
+    }
+
+    &__item:hover::before,
+    &__item--active::before {
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    &__item:active::before {
+        background: linear-gradient(to left bottom, lighten(#FF3366, 5%), lighten(#BA265D, 5%));
+    }
+
+    // Navigation Link Styling
+    &__link {
+        color: var(--light-1);
+        text-transform: uppercase;
+        display: block;
+        padding: 1rem 1.5rem;
+
+        // This was made for the icon, it was not centered
+        display: flex;
+        align-items: center;
+
+        // Making it Appeare on top: to still be shown in the hover effect
+        position: relative;
+        z-index: 10; // z-index doesn't work if the position is static
+    }
+
+    // Icon Styling
+    &__icon {
+        @include square(18px);
+        fill: currentColor; // Color of the current element if defined, otherwise the color of the parent element
+        margin-right: .6rem;
+    }
+
+    // Hover Effect
+    
+}
+
+////////////////////////////////
+// Copyright text
+.copyright {
+    font-size: 12px;
+    color: var(--light-4);
+    text-align: center;
+    padding: 0 20px;
 }

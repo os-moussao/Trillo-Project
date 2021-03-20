@@ -4,3 +4,9 @@
     align-items: center;
     justify-content: center;
 }
+
+// Square
+@mixin square($length) {
+    height: $length;
+    width: $length;
+}
