@@ -1,11 +1,10 @@
 .header {
     // Header global styling
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 4rem;
+    padding: 0 1.5rem;
     background: #fff;
     border-bottom: 1px var(--light-2) solid;
-
-    // Header Content Wrap
-    &__content {
-        display: flex;
-    }
 }
