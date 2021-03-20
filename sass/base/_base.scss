@@ -11,6 +11,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    background: var(--light-2);
+}
+
 h1, h2, h3, h4 {
     margin-bottom: 1rem;
 }

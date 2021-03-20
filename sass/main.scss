@@ -16,9 +16,10 @@
 @import 'components/buttons';
 
 // 4. Layouts
-// @import 'layouts/header';
-// @import 'layouts/footer';
-// @import 'layouts/navigation';
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/sidebar';
+@import 'layout/main-view';
 
 // 5. Page-specific
 // @import 'pages/home';

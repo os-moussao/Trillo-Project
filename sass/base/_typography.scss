@@ -1,6 +1,6 @@
 // General typography
 body {
-    font-family: $text-font-stack;
+    font-family: var(--text-font-stack);
     font-weight: 400;
     line-height: 1.4;
     color: var(--dark-2);

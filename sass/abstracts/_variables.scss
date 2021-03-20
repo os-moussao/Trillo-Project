@@ -2,10 +2,6 @@
 // This file contains all application-wide (Custom CSS/ SASS) variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
-$text-font-stack: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
-
-
 /**
  * We used Custom CSS variables because:
  * They can be manipulated in javascript
@@ -13,7 +9,11 @@ $text-font-stack: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
  * It's easier to use them in the calc() function
  * Css variables cascade and they are inherited
 */
+
 :root {
+    /// Regular font family
+    --text-font-stack: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
+
     /// Primary colors
     --primary-clr: #eb2f64;
     --primary-light: #FF3366;
