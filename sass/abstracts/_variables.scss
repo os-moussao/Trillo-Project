@@ -1,17 +1,32 @@
-/*
-COLORS
+// -----------------------------------------------------------------------------
+// This file contains all application-wide (Custom CSS/ SASS) variables.
+// -----------------------------------------------------------------------------
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
+/// Regular font family
+$text-font-stack: 'Open Sans', 'Segoe UI', Verdana, sans-serif;
 
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
 
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
+/**
+ * We used Custom CSS variables because:
+ * They can be manipulated in javascript
+ * We can edit them in dev tools
+ * It's easier to use them in the calc() function
+ * Css variables cascade and they are inherited
 */
+:root {
+    /// Primary colors
+    --primary-clr: #eb2f64;
+    --primary-light: #FF3366;
+    --primary-dark: #BA265D;
+
+    /// Grey-light Colors
+    --light-1: #faf9f9;
+    --light-2: #f4f2f2;
+    --light-3: #f0eeee;
+    --light-4: #ccc;
+
+    /// Grey-dark Colors
+    --dark-1: #333;
+    --dark-2: #777;
+    --dark-3: #999;
+}

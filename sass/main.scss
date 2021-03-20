@@ -6,23 +6,19 @@
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
-// 2. Vendors: nothing to import
-
-// 3. Base Styling
+// 2. Base Styling
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animations';
 @import 'base/utilities';
 
-// 4. Micro Components
+// 3. Micro Components
 @import 'components/buttons';
 
-// 5. Layouts
+// 4. Layouts
 // @import 'layouts/header';
 // @import 'layouts/footer';
 // @import 'layouts/navigation';
 
-// 6. Page-specific
-@import 'pages/home';
-
-// 7. Themes: no themes
+// 5. Page-specific
+// @import 'pages/home';

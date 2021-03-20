@@ -1,0 +1,28 @@
+// Reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
