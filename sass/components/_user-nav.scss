@@ -19,6 +19,9 @@
     // Icon box contains the icon and the notification
     &__icon-box {
         position: relative;
+        padding: 0;
+        width: 4rem;
+        @include flex-center-h-v;
     }
 
     // Icons: chat, bookmark
@@ -41,7 +44,7 @@
         // Positioning
         position: absolute;
         top: .6rem;
-        right: .6rem;
+        right: .8rem;
 
         // Centering text
         @include flex-center-h-v;
