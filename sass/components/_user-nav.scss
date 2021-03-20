@@ -1,0 +1,33 @@
+.user-nav {
+    // User navigation Styling
+    display: flex;
+
+    // Icon box contains the icon and the notification
+    &__icon-box {
+
+    }
+
+    // Icons: chat, bookmark
+    &__icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    // Notification span styling
+    &__notification {
+
+    }
+
+    // User Profile
+    &__profile {
+        &-img {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        &-name {
+
+        }
+    }
+}

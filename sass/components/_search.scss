@@ -1,0 +1,18 @@
+// Styling of the search bar (.header > form.search)
+.search {
+    // Search input styling
+    &__input {
+
+    }
+
+    // Submit button styling
+    &__btn {
+
+    }
+
+    // Search icon
+    &__icon {
+        height: 20px;
+        width: 20px;
+    }
+}

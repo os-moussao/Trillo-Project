@@ -54,13 +54,34 @@ body {
   margin: 0 auto;
   overflow-x: hidden; }
 
+.logo {
+  display: inline-block;
+  width: 3.5rem; }
+
+.icon {
+  display: inline-block; }
+
+.search__icon {
+  height: 20px;
+  width: 20px; }
+
+.user-nav {
+  display: flex; }
+  .user-nav__icon {
+    height: 25px;
+    width: 25px; }
+  .user-nav__profile-img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+
 .header {
   height: 4rem;
   background: #fff;
   border-bottom: 1px var(--light-2) solid; }
-  .header .logo {
-    display: inline-block;
-    width: 3.5rem; }
+  .header__content {
+    display: flex; }
 
 .content {
   display: flex; }
