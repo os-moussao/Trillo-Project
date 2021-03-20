@@ -100,15 +100,41 @@ body {
     width: 20px; }
 
 .user-nav {
+  align-self: stretch;
   display: flex; }
+  .user-nav > * {
+    padding: 0 1rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .user-nav > *:hover {
+      background: var(--light-2); }
+  .user-nav__icon-box {
+    position: relative; }
   .user-nav__icon {
     height: 25px;
-    width: 25px; }
+    width: 25px;
+    fill: var(--dark-2); }
+  .user-nav__notification {
+    font-size: .7rem;
+    color: #fff;
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 50%;
+    background: var(--primary-clr);
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .user-nav__profile-img {
     display: inline-block;
     width: 40px;
     height: 40px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: .7rem; }
 
 .header {
   display: flex;
