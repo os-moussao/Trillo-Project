@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right bottom, var(--primary-light), var(--primary-dark));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100px;
+    transition: all .3s;
+
+    &-small {
+        padding: 0;
+        text-transform: none;
+        color: var(--primary-clr);
+        background: transparent;
+
+        
+    }
+}

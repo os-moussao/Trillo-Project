@@ -1,0 +1,11 @@
+.stars {
+    display: inline-block;
+    line-height: 0; // for icons (which behave like text) not to have that bottom spacing 
+    display: flex; // for icons to be close to each other
+
+    &__icon {
+        @include square(18px);
+        fill: var(--primary-clr);
+        margin: 0;
+    }
+}

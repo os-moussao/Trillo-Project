@@ -1,0 +1,32 @@
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px var(--light-2) solid;
+    
+    &__heading {
+        font-size: 22px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 1rem 0 1.5rem;
+    }
+
+    &__stars {
+        // Automatically calculated margin(right)
+        // Such that all flex elements will occupy all the width of the flex conteiner 
+        margin-right: auto;
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        &-icon {
+            @include square(22px);
+            fill: var(--primary-clr);
+        }
+    }
+
+    &__rating {
+
+    }
+}

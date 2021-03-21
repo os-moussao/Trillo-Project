@@ -12,12 +12,18 @@
 @import 'base/animations';
 @import 'base/utilities';
 
-// 3. Micro Components
+// 3. Components
+
+/// Small Components
 @import 'components/buttons';
-@import 'components/small-components';
+@import 'components/micro-components';
 @import 'components/search';
+@import 'components/stars';
 @import 'components/user-nav';
+
+/// Bigger Components
 @import 'components/gallery';
+@import 'components/overview';
 
 // 4. Layouts
 @import 'layout/header';
