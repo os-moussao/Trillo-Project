@@ -6,6 +6,48 @@
 
     &__item {
         position: relative;
+        overflow: hidden;
+
+        // Overlay Styling
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .9;
+            transform: scale(2) translate(-75%, -65%) rotate(-28deg);
+            transition: transform .7s cubic-bezier(1, 1, 0, 1);;
+        }
+
+        // Different overlays for different items
+        &--1::after {
+            background: var(--primary-clr);
+        }
+        &--2::after {
+            background: var(--blue-1);
+        }
+        &--3::after {
+            background:var(--yello-1);
+        }
+
+        // Hover Effects
+        &:hover {
+
+            // Brining the overlay
+            &::after {
+                transform: scale(2) translate(0, 0) rotate(-28deg);
+            }
+
+            // Showing the text
+            & > .gallery__caption {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+                z-index: 10;
+            }
+        }
     }
 
     // ----------------------------------------------------------------------------------------------
@@ -25,22 +67,34 @@
     }
 
     &__caption {
+        // Positioning
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+
+        // Text centering
         @include flex-center-h-v;
         flex-direction: column;
+        
+        // Typography
         color: #fff;
         text-transform: uppercase;
         text-align: center;
+        
+        // Hiding text
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: .3s .3s all;
 
+        // Icon 
         &--icon {
-            // font-size: 6rem;
             margin-bottom: .5rem;
         }
 
+        // Text
         &--text {
             font-weight: 300;
             font-size: 1.5rem;
