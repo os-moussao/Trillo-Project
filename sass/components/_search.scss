@@ -50,12 +50,13 @@
     &__icon {
         height: 20px;
         width: 20px;
-        transition: transform .2s;
+        transition: transform .2s, fill .2s;
     }
 
     // Icon animation on hover and focus states
     &__input:hover + &__btn &__icon,
     &__input:focus + &__btn &__icon {
         transform: scale(1.2);
+        fill: var(--primary-clr);
     }
 }

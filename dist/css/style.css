@@ -107,10 +107,11 @@ body {
   .search__icon {
     height: 20px;
     width: 20px;
-    transition: transform .2s; }
+    transition: transform .2s, fill .2s; }
   .search__input:hover + .search__btn .search__icon,
   .search__input:focus + .search__btn .search__icon {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    fill: var(--primary-clr); }
 
 .user-nav {
   align-self: stretch;
