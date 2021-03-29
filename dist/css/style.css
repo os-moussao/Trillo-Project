@@ -296,6 +296,35 @@ body {
       font-size: 11px;
       font-weight: 100; }
 
+.recommendation {
+  display: flex;
+  align-items: center; }
+  .recommendation__count {
+    color: var(--dark-3);
+    font-size: 15px;
+    margin-right: auto; }
+  .recommendation__friends {
+    line-height: 0;
+    font-size: 0; }
+  .recommendation__img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-sizing: content-box; }
+    .recommendation__img:not(:last-child) {
+      margin-right: -1.1rem; }
+
+.review {
+  background: #fff;
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 35px; }
+  .review__user-img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -401,25 +430,6 @@ body {
         -webkit-mask-image: url("../img/SVG/chevron-thin-right.svg");
         -webkit-mask-size: cover; }
 
-.recommendation {
-  display: flex;
-  align-items: center; }
-  .recommendation__count {
-    color: var(--dark-3);
-    font-size: 15px;
-    margin-right: auto; }
-  .recommendation__friends {
-    line-height: 0;
-    font-size: 0; }
-  .recommendation__img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-sizing: content-box; }
-    .recommendation__img:not(:last-child) {
-      margin-right: -1.1rem; }
-
 .user-reviews {
   flex: 1;
-  background: #fff; }
+  background: inherit; }

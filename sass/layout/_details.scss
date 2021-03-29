@@ -1,4 +1,4 @@
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // Overall layout
 .details {
     display: flex;
@@ -7,7 +7,7 @@
     border-bottom: var(--line-1);
 }
 
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // Description Block
 .description {
     flex: 0 0 60%;
@@ -60,40 +60,9 @@
 
 }
 
-////////////////////////////////
-// Recommendations
-.recommendation {
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    
-    &__count {
-        color: var(--dark-3);
-        font-size: 15px;
-        margin-right: auto;
-    }    
-    
-    &__friends {
-        line-height: 0;
-        font-size: 0;
-    }    
-    
-    &__img {
-        @include square(50px);
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-sizing: content-box;
-        &:not(:last-child) {
-            margin-right: -1.1rem;
-        }
-    }    
-}
-
-////////////////////////////////
+////////////////////////////////////////////////////////////////
 // Reviews Block
 .user-reviews {
     flex: 1;
-    background: #fff;
-
-    
+    background: inherit;
 }
