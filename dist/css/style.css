@@ -258,7 +258,8 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1.5px var(--light-2) solid; }
+  border-bottom: 1.5px var(--light-2) solid;
+  height: 70px; }
   .overview__heading {
     font-size: 22px;
     font-weight: 300;
@@ -275,6 +276,23 @@ body {
       height: 22px;
       width: 22px;
       fill: var(--primary-clr); }
+  .overview__rating {
+    background: var(--primary-clr);
+    color: #fff;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: stretch;
+    width: 85px;
+    text-transform: uppercase; }
+    .overview__rating-average {
+      font-size: 25px;
+      font-weight: 100; }
+    .overview__rating-count {
+      font-size: 11px;
+      font-weight: 100; }
 
 .header {
   display: flex;

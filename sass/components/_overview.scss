@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1.5px var(--light-2) solid;
+    height: 70px;
     
     &__heading {
         font-size: 22px;
@@ -29,6 +30,23 @@
     }
 
     &__rating {
+        background: var(--primary-clr);
+        color: #fff;
+        margin-left: 1rem;
+        @include flex-center-h-v;
+        flex-direction: column;
+        align-self: stretch; //height: 100%;
+        width: 85px;
+        text-transform: uppercase;
 
+        &-average {
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+        &-count {
+            font-size: 11px;
+            font-weight: 100;
+        }
     }
 }
