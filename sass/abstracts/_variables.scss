@@ -47,3 +47,9 @@
     --line-1: 1px solid var(--light-2);
     --line-2: 1.5px solid var(--light-2);
 }
+
+// Break Points
+$bp-big-desk: 1600px;
+$bp-tab-land: 1200px;
+$bp-tab-port: 900px;
+$bp-phone: 600px;

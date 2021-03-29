@@ -12,3 +12,8 @@
 - Icon fonts fail more often that you think, and the browser displays a blank square in that case, which is not good.
 - More often, screen readers for blind people fail to read icon fonts
 - https://icomoon.io/ is a better app to generate SVGs
+
+# To Explore
+
+- Why using `em` unit in break points?
+- Learn more about image responsiveness
