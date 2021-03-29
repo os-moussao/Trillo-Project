@@ -22,6 +22,11 @@
 .side-nav {
     margin-top: 1rem;
 
+    @media only screen and (max-width: 375px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     // Navigation list item
     &__item {
         position: relative;
@@ -38,6 +43,10 @@
             &:not(:last-child) {
                 margin-bottom: 0;
             }
+        }
+
+        @media only screen and (max-width: 375px) {
+            flex: 0 0 50%;
         }
     }
 
@@ -75,6 +84,7 @@
         text-transform: uppercase;
         display: block;
         padding: 1rem 1.5rem;
+        text-align: center;
 
         // This was made for the icon, it was not centered
         display: flex;

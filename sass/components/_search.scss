@@ -7,6 +7,13 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: 600px) {
+        order: 1;
+        flex: 0 0 80%;
+        margin: auto;
+        margin-top: .5rem;
+    }
+
     // Search input styling
     &__input {
         background: var(--light-2);

@@ -2,6 +2,12 @@
 .logo {
     display: inline-block;
     width: 3.5rem;
+    line-height: 0;
+    font-size: 0;
+
+    @media only screen and (max-width: 600px) {
+        width: 2.7rem;
+    }
 }
 
 // Icon Styling

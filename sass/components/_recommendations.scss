@@ -9,6 +9,10 @@
         color: var(--dark-3);
         font-size: 15px;
         margin-right: auto;
+        
+        @media only screen and (max-width: 375px) {
+            font-size: 13px;
+        }
     }    
     
     &__friends {
@@ -22,6 +26,11 @@
         border-radius: 50%;
         border: 3px solid #fff;
         box-sizing: content-box;
+
+        @media only screen and (max-width: 375px) {
+            @include square(30px);
+        }
+
         &:not(:last-child) {
             margin-right: -1.1rem;
 

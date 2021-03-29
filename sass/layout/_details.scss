@@ -48,6 +48,11 @@
         margin-bottom: 2rem;
     }
 
+    @media only screen and (max-width: 375px) {
+        font-size: 12px;
+        padding: 1rem;
+    }
+
     &__text:not(:last-of-type) {
         margin-bottom: 1.2rem; 
     }
@@ -64,6 +69,10 @@
             flex: 0 0 50%;
             display: flex;
             align-items: center;
+
+            @media only screen and (max-width: 375px) {
+                font-size: 12px;
+            }
 
             &:not(:nth-child(7)):not(:nth-child(8)) {
                 margin-bottom: .5rem;
@@ -86,6 +95,11 @@
                 mask-size: cover;
                 -webkit-mask-image: url('../img/SVG/chevron-thin-right.svg');
                 -webkit-mask-size: cover;
+
+                @media only screen and (max-width: 375px) {
+                    @include square(13px);
+                    margin-right: .2rem;
+                }
             }
         }
     }

@@ -22,13 +22,20 @@
         padding: 0;
         width: 4rem;
         @include flex-center-h-v;
+
+        @media only screen and (max-width: 375px) {
+            width: 3rem;
+        }
     }
 
     // Icons: chat, bookmark
     &__icon {
-        height: 25px;
-        width: 25px;
+        @include square(25px);
         fill: var(--dark-2);
+
+        @media only screen and (max-width: 375px) {
+            @include square(20px);
+        }
     }
 
     // Notification span styling
@@ -48,6 +55,12 @@
 
         // Centering text
         @include flex-center-h-v;
+
+        @media only screen and (max-width: 375px) {
+            transform: scale(.8);
+            top: .3rem;
+            right: .4rem;
+        }
     }
 
     // User Profile
@@ -58,6 +71,18 @@
             height: 40px;
             border-radius: 50%;
             margin-right: .7rem; // Moving the Name away
+        }
+
+        @media only screen and (max-width: 375px) {
+            padding: 0;
+        
+            &-name {
+                display: none;
+            }
+
+            &-img {
+                margin: 0;
+            }
         }
     }
 }
