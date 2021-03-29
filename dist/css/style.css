@@ -261,6 +261,9 @@ body {
       opacity: 1;
       transform: translateY(0);
       z-index: 10; }
+    @media only screen and (max-width: 600px) {
+      .gallery__item:nth-child(3) {
+        display: none; } }
   .gallery__img {
     display: block; }
   .gallery__caption {
