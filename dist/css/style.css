@@ -81,33 +81,55 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 1rem 3rem;
   text-transform: uppercase;
-  background: linear-gradient(to right bottom, var(--primary-light), var(--primary-dark));
+  background: linear-gradient(to left, var(--primary-light), var(--primary-dark));
   color: #fff;
   border: none;
   cursor: pointer;
   outline: none;
   border-radius: 100px;
-  transition: all .3s; }
+  transition: all .3s;
+  overflow: hidden;
+  position: relative; }
+  .btn__visible, .btn__hidden {
+    transition: all .2s;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300; }
+  .btn__visible {
+    padding: 1rem 5rem; }
+  .btn__hidden {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    padding: 1rem 0; }
+  .btn__arrow {
+    margin-left: 3px;
+    transition: margin .3s;
+    backface-visibility: hidden; }
   .btn-small {
     padding: 0;
     text-transform: none;
     color: var(--primary-clr);
-    background: transparent;
+    background: transparent !important;
     border-radius: 0%;
     border-bottom: 1px solid currentColor;
     transition: color .2s; }
     .btn-small:hover {
       color: var(--dark-1); }
-    .btn-small:focus {
-      animation: pulsate 1s 3; }
-  .btn span {
-    margin-left: 3px;
-    transition: margin .3s;
-    backface-visibility: hidden; }
-  .btn:hover span {
+  .btn:hover {
+    background: linear-gradient(to right, var(--primary-light), var(--primary-dark)); }
+  .btn:hover__arrow {
     margin-left: 7px; }
+  .btn:hover .btn__visible {
+    transform: translate(0, 100%); }
+  .btn:hover .btn__hidden {
+    top: 0;
+    left: 0; }
+  .btn:focus {
+    animation: pulsate 1s 3; }
 
 .logo {
   display: inline-block;
@@ -260,7 +282,7 @@ body {
     .gallery__caption--text {
       font-weight: 300;
       font-size: 1.5rem;
-      width: 50%;
+      width: 100%;
       line-height: 1; }
 
 .overview {
@@ -363,6 +385,14 @@ body {
     line-height: 1;
     font-size: 200px;
     color: var(--light-2); }
+
+.cta {
+  padding: 35px 0;
+  text-align: center; }
+  .cta__caption {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1.5rem; }
 
 .header {
   display: flex;
