@@ -5,28 +5,59 @@
     box-shadow: 0 20px 50px 0 rgba(#000, .1);
     padding: 30px;
     margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
 
     &__text {
-
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 10; // z-index only works when position is not static
     }
 
     &__user {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
         
         &-img {
-            @include square(55px);
+            @include square(50px);
             border-radius: 50%;
+            margin-right: 1rem;
         }
 
         &-data {
-
+            margin-right: auto;
         }
 
         &-name {
-
+            color: var(--dark-1);
+            text-transform: uppercase;
+            margin-bottom: 5px;
         }
 
         &-date {
-
+            font-size: 11px;
         }
+
+        &-rating {
+            font-size: 25px;
+            font-weight: 100;
+            color: var(--primary-clr);
+        }
+    }
+
+    // Quotation
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -25px;
+        left: -8px;
+        z-index: 5;
+
+        // Typograpgy
+        font-family: sans-serif;
+        line-height: 1;
+        font-size: 200px;
+        color: var(--light-2);
     }
 }

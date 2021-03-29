@@ -65,4 +65,11 @@
 .user-reviews {
     flex: 1;
     background: inherit;
+    display: flex;
+    flex-direction: column;
+
+    &__btn {
+        font-size: 1rem;
+        align-self: center;
+    }
 }
