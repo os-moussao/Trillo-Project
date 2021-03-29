@@ -1,3 +1,5 @@
+////////////////////////////////
+// Overall layout
 .details {
     display: flex;
     padding: 50px;
@@ -5,6 +7,8 @@
     border-bottom: var(--line-1);
 }
 
+////////////////////////////////
+// Description Block
 .description {
     flex: 0 0 60%;
     margin-right: 60px;
@@ -56,6 +60,8 @@
 
 }
 
+////////////////////////////////
+// Recommendations
 .recommendation {
     display: flex;
     // justify-content: space-between;
@@ -83,7 +89,11 @@
     }    
 }
 
-.reviews {
+////////////////////////////////
+// Reviews Block
+.user-reviews {
     flex: 1;
     background: #fff;
+
+    
 }

@@ -420,6 +420,6 @@ body {
     .recommendation__img:not(:last-child) {
       margin-right: -1.1rem; }
 
-.reviews {
+.user-reviews {
   flex: 1;
   background: #fff; }
