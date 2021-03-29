@@ -379,8 +379,8 @@ body {
   .description__list {
     margin: 2rem 0;
     padding: 1.5rem 0;
-    border-top: var(--line-1);
-    border-bottom: var(--line-1);
+    border-top: var(--line-2);
+    border-bottom: var(--line-2);
     display: flex;
     flex-wrap: wrap; }
     .description__list-item {
@@ -400,6 +400,25 @@ body {
         mask-size: cover;
         -webkit-mask-image: url("../img/SVG/chevron-thin-right.svg");
         -webkit-mask-size: cover; }
+
+.recommendation {
+  display: flex;
+  align-items: center; }
+  .recommendation__count {
+    color: var(--dark-3);
+    font-size: 15px;
+    margin-right: auto; }
+  .recommendation__friends {
+    line-height: 0;
+    font-size: 0; }
+  .recommendation__img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-sizing: content-box; }
+    .recommendation__img:not(:last-child) {
+      margin-right: -1.1rem; }
 
 .reviews {
   flex: 1;

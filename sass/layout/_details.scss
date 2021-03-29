@@ -19,8 +19,8 @@
     &__list {
         margin: 2rem 0;
         padding: 1.5rem 0;
-        border-top: var(--line-1);
-        border-bottom: var(--line-1);
+        border-top: var(--line-2);
+        border-bottom: var(--line-2);
         display: flex;
         flex-wrap: wrap;
 
@@ -54,6 +54,33 @@
         }
     }
 
+}
+
+.recommendation {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    
+    &__count {
+        color: var(--dark-3);
+        font-size: 15px;
+        margin-right: auto;
+    }    
+    
+    &__friends {
+        line-height: 0;
+        font-size: 0;
+    }    
+    
+    &__img {
+        @include square(50px);
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-sizing: content-box;
+        &:not(:last-child) {
+            margin-right: -1.1rem;
+        }
+    }    
 }
 
 .reviews {
