@@ -1,7 +1,7 @@
 .overview {
     display: flex;
     align-items: center;
-    border-bottom: 1.5px var(--light-2) solid;
+    border-bottom: var(--line-2);
     height: 70px;
     
     &__heading {

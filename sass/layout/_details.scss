@@ -1,0 +1,62 @@
+.details {
+    display: flex;
+    padding: 50px;
+    background: var(--light-1);
+    border-bottom: var(--line-1);
+}
+
+.description {
+    flex: 0 0 60%;
+    margin-right: 60px;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 20px 50px 0 rgba(#000, .1);
+
+    &__text:not(:last-of-type) {
+        margin-bottom: 1.2rem; 
+    }
+
+    &__list {
+        margin: 2rem 0;
+        padding: 1.5rem 0;
+        border-top: var(--line-1);
+        border-bottom: var(--line-1);
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            flex: 0 0 50%;
+            display: flex;
+            align-items: center;
+
+            &:not(:nth-child(7)):not(:nth-child(8)) {
+                margin-bottom: .5rem;
+            }
+
+            // Adding the icons
+            &::before {
+                content: "";
+                display: inline-block;
+                @include square(14px);
+                margin-right: .5rem;
+
+                // Older Browsers
+                // background-color: yellowgreen;
+                // background-image: url('../img/SVG/chevron-thin-right.svg');
+
+                // Newer Browsers (masks)
+                background-color: var(--primary-clr);
+                mask-image: url('../img/SVG/chevron-thin-right.svg');
+                mask-size: cover;
+                -webkit-mask-image: url('../img/SVG/chevron-thin-right.svg');
+                -webkit-mask-size: cover;
+            }
+        }
+    }
+
+}
+
+.reviews {
+    flex: 1;
+    background: #fff;
+}

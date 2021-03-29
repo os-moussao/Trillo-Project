@@ -7,6 +7,5 @@
 // Icon Styling
 .icon {
     display: inline-block;
-    height: 25px;
-    width: 25px;
+    @include square(25px);
 }
