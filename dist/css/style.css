@@ -190,6 +190,10 @@ body {
     width: 18px;
     fill: var(--primary-clr);
     margin: 0; }
+    @media only screen and (max-width: 600px) {
+      .stars__icon {
+        height: 15px;
+        width: 15px; } }
 
 .user-nav {
   align-self: stretch;
@@ -307,6 +311,10 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0 1rem 0 1.5rem; }
+    @media only screen and (max-width: 600px) {
+      .overview__heading {
+        font-size: 18px;
+        margin: 0 .6rem 0 .8rem; } }
   .overview__stars {
     margin-right: auto; }
   .overview__location {
@@ -314,10 +322,18 @@ body {
     align-items: center;
     margin-right: 1rem;
     font-size: 14px; }
+    @media only screen and (max-width: 600px) {
+      .overview__location {
+        font-size: 13px;
+        margin: 0 .6rem 0 .8rem; } }
     .overview__location-icon {
       height: 22px;
       width: 22px;
       fill: var(--primary-clr); }
+      @media only screen and (max-width: 600px) {
+        .overview__location-icon {
+          height: 18px;
+          width: 18px; } }
   .overview__rating {
     background: var(--primary-clr);
     color: #fff;
@@ -332,9 +348,15 @@ body {
     .overview__rating-average {
       font-size: 25px;
       font-weight: 100; }
+      @media only screen and (max-width: 600px) {
+        .overview__rating-average {
+          font-size: 20px; } }
     .overview__rating-count {
       font-size: 11px;
       font-weight: 100; }
+      @media only screen and (max-width: 600px) {
+        .overview__rating-count {
+          font-size: .6rem; } }
 
 .recommendation {
   display: flex;
@@ -418,10 +440,15 @@ body {
   .cta__caption {
     text-transform: uppercase;
     font-weight: 300;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    padding: 0 2rem; }
     @media only screen and (max-width: 1000px) {
       .cta__caption {
         font-size: 18px; } }
+    @media only screen and (max-width: 600px) {
+      .cta__caption {
+        font-size: 1rem;
+        margin-bottom: .9rem; } }
   @media only screen and (max-width: 1000px) {
     .cta {
       padding: 1.5rem 0; } }
