@@ -194,6 +194,10 @@ body {
       .stars__icon {
         height: 15px;
         width: 15px; } }
+    @media only screen and (max-width: 530px) {
+      .stars__icon {
+        height: 14px;
+        width: 14px; } }
 
 .user-nav {
   align-self: stretch;
@@ -315,6 +319,9 @@ body {
       .overview__heading {
         font-size: 18px;
         margin: 0 .6rem 0 .8rem; } }
+    @media only screen and (max-width: 500px) {
+      .overview__heading {
+        font-size: 16px; } }
   .overview__stars {
     margin-right: auto; }
   .overview__location {
@@ -326,6 +333,9 @@ body {
       .overview__location {
         font-size: 13px;
         margin: 0 .6rem 0 .8rem; } }
+    @media only screen and (max-width: 530px) {
+      .overview__location {
+        font-size: 12px; } }
     .overview__location-icon {
       height: 22px;
       width: 22px;
@@ -345,6 +355,12 @@ body {
     align-self: stretch;
     width: 85px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 600px) {
+      .overview__rating {
+        width: 70px; } }
+    @media only screen and (max-width: 530px) {
+      .overview__rating {
+        margin-left: .5rem; } }
     .overview__rating-average {
       font-size: 25px;
       font-weight: 100; }
