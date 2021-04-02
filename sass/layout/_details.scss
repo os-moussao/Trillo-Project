@@ -86,15 +86,18 @@
                 margin-right: .5rem;
 
                 // Older Browsers
-                // background-color: yellowgreen;
-                // background-image: url('../img/SVG/chevron-thin-right.svg');
+                background-image: url('../img/SVG/chevron-thin-right.svg');
+                background-size: cover;
 
                 // Newer Browsers (masks)
-                background-color: var(--primary-clr);
-                mask-image: url('../img/SVG/chevron-thin-right.svg');
-                mask-size: cover;
-                -webkit-mask-image: url('../img/SVG/chevron-thin-right.svg');
-                -webkit-mask-size: cover;
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background: none;
+                    background-color: var(--primary-clr);
+                    mask-image: url('../img/SVG/chevron-thin-right.svg');
+                    mask-size: cover;
+                    -webkit-mask-image: url('../img/SVG/chevron-thin-right.svg');
+                    -webkit-mask-size: cover;
+                }
 
                 @media only screen and (max-width: 375px) {
                     @include square(13px);
